@@ -18,7 +18,7 @@ Welcome to the repository for my professional portfolio website. This project is
 
 ## Setup & Deployment
 This website is ready to be hosted out-of-the-box using GitHub Pages. 
-A GitHub Actions workflow (`.github/workflows/static.yml`) is included to handle automated deployment whenever changes are pushed to the `main` or `master` branch.
+A GitHub Actions workflow is included to handle automated deployment whenever changes are pushed to the `main` or `master` branch.
 
 ### Local Development
 No build tools (like npm or Node.js) are required to run this project. Simply clone the repository and open `index.html` in any web browser:
