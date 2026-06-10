@@ -6,6 +6,18 @@
     <meta name="description" content="Mohobbot Hossen - Portfolio of a professional Support & System Engineer with expertise in Data Centers, Hardware Maintenance, and Networking.">
     <title>Mohobbot Hossen | Portfolio</title>
     
+    <!-- Preconnects to improve load times -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- Preload LCP Background Image -->
+    <link rel="preload" as="image" href="Assets/bg.png">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
@@ -26,24 +38,12 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#education">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#gallery">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
                         <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
                             <i id="theme-icon" class="fas fa-moon"></i>
@@ -54,297 +54,309 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-section" style="background-image: url('Assets/bg.png'); background-size: cover; background-position: center; background-attachment: fixed;">
-        <div class="container text-center text-md-start">
-            <div class="row align-items-center">
-                <div class="col-lg-8 reveal">
-                    <h1 class="hero-title">Hi, I'm <br><span class="text-accent">Mohobbot Hossen</span></h1>
-                    <h2 class="hero-subtitle">Support Engineer | System Administrator | Data Center Specialist</h2>
-                    <p class="lead mb-4" style="color: var(--text-secondary); max-width: 600px;">
-                        Specializing in Server Maintenance, Structured Cabling, LAN/SAN setup, and Hardware Troubleshooting. Ensuring peak performance and service delivery in Data Center environments.
-                    </p>
-                    <div class="d-flex gap-3 justify-content-center justify-content-md-start">
-                        <a href="#contact" class="btn-custom">Contact Me</a>
-                        <a href="#experience" class="btn-custom" style="background: var(--glass-bg); color: var(--text-primary); border-color: var(--glass-border);">View Work</a>
+    <!-- Main Content Wrapper for Accessibility -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section" style="background-image: url('Assets/bg.png'); background-size: cover; background-position: center; background-attachment: fixed;">
+            <div class="container text-center text-md-start">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 reveal">
+                        <h1 class="hero-title">Hi, I'm <br><span class="text-accent">Mohobbot Hossen</span></h1>
+                        <h2 class="hero-subtitle">Support Engineer | System Administrator | Data Center Specialist</h2>
+                        <p class="lead mb-4" style="color: var(--text-secondary); max-width: 600px;">
+                            Specializing in Server Maintenance, Structured Cabling, LAN/SAN setup, and Hardware Troubleshooting. Ensuring peak performance and service delivery in Data Center environments.
+                        </p>
+                        <div class="d-flex gap-3 justify-content-center justify-content-md-start">
+                            <a href="#contact" class="btn-custom">Contact Me</a>
+                            <a href="#experience" class="btn-custom" style="background: var(--glass-bg); color: var(--text-primary); border-color: var(--glass-border);">View Work</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-5 mt-5">
-        <div class="container reveal">
-            <div class="text-center">
-                <h2 class="section-title">About Me & Skills</h2>
-            </div>
-            <div class="row mt-4">
-                <div class="col-lg-12 px-lg-5 mb-5 text-center">
-                    <h3 class="mb-4">Professional Objective</h3>
-                    <p class="fs-5 mx-auto" style="color: var(--text-secondary); line-height: 1.8; max-width: 900px;">
-                        I am a dedicated systems engineering professional, focused on optimizing high-availability environments. I excel in environments that foster self-assessment and continuous learning. My commitment is to drive operational excellence, adapt to emerging technologies, and provide substantial positive contributions to enterprise IT infrastructure.
-                    </p>
+        <!-- About Section -->
+        <section id="about" class="py-5 mt-5">
+            <div class="container reveal">
+                <div class="text-center">
+                    <h2 class="section-title">About Me & Skills</h2>
                 </div>
-            </div>
-            
-            <div class="row g-4 justify-content-center">
-                <!-- Skill Category 1 -->
-                <div class="col-md-4">
-                    <div class="glass-card text-center h-100">
-                        <i class="fas fa-server fa-3x text-accent mb-3"></i>
-                        <h4 class="mb-3">Hardware & Infrastructure</h4>
-                        <div>
-                            <span class="skill-badge">Server Maintenance</span>
-                            <span class="skill-badge">Data Center Operations</span>
-                            <span class="skill-badge">Cabinet/Rack Deployment</span>
-                            <span class="skill-badge">Power Systems Maint.</span>
-                            <span class="skill-badge">Component Diagnosis (HDD, RAM, NIC)</span>
-                        </div>
+                <div class="row mt-4">
+                    <div class="col-lg-12 px-lg-5 mb-5 text-center">
+                        <h3 class="mb-4">Professional Objective</h3>
+                        <p class="fs-5 mx-auto" style="color: var(--text-secondary); line-height: 1.8; max-width: 900px;">
+                            I am a dedicated systems engineering professional, focused on optimizing high-availability environments. I excel in environments that foster self-assessment and continuous learning. My commitment is to drive operational excellence, adapt to emerging technologies, and provide substantial positive contributions to enterprise IT infrastructure.
+                        </p>
                     </div>
                 </div>
-                <!-- Skill Category 2 -->
-                <div class="col-md-4">
-                    <div class="glass-card text-center h-100">
-                        <i class="fas fa-network-wired fa-3x text-accent mb-3"></i>
-                        <h4 class="mb-3">Networking & Connectivity</h4>
-                        <div>
-                            <span class="skill-badge">LAN & SAN Cabling</span>
-                            <span class="skill-badge">Structured Cabling Design</span>
-                            <span class="skill-badge">Switch Configuration</span>
-                            <span class="skill-badge">Raised Floor Laying</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Skill Category 3 -->
-                <div class="col-md-4">
-                    <div class="glass-card text-center h-100">
-                        <i class="fas fa-shield-alt fa-3x text-accent mb-3"></i>
-                        <h4 class="mb-3">Security & Administration</h4>
-                        <div>
-                            <span class="skill-badge">OS Troubleshooting</span>
-                            <span class="skill-badge">NAS Storage Admin</span>
-                            <span class="skill-badge">CCTV & NVR Operation</span>
-                            <span class="skill-badge">Performance Auditing</span>
-                            <span class="skill-badge">IT Asset Management</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="py-5 mt-5" style="background-color: var(--bg-secondary);">
-        <div class="container reveal">
-            <div class="text-center">
-                <h2 class="section-title">Professional Experience</h2>
-            </div>
-            <div class="timeline mt-5">
                 
-                <!-- Experience 1 -->
-                <div class="timeline-item">
-                    <div class="glass-card timeline-content">
-                        <span class="timeline-date"><i class="far fa-calendar-alt me-2"></i> 15 June 2025 - Present</span>
-                        <h4>Support Engineer</h4>
-                        <h5>Tech BD Solution <span style="font-size: 0.9rem;">| Server Maintenance Department</span></h5>
-                        <ul>
-                            <li><strong>Hardware Lifecycle Management:</strong> Orchestrated hardware lifecycle management, including diagnosing and replacing faulty enterprise server components (HDD, RAM, NIC, PSU) to minimize system downtime.</li>
-                            <li><strong>Infrastructure Deployment:</strong> Engineered structured cabling solutions and executed comprehensive hardware maintenance protocols across multiple client sites.</li>
-                            <li><strong>System Administration:</strong> Managed operating system upgrades, executed advanced hardware troubleshooting, and maintained meticulous IT asset inventories.</li>
-                            <li><strong>Client Services:</strong> Delivered exemplary technical support, resolving complex client issues swiftly and generating detailed, actionable service performance reports.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Experience 2 -->
-                <div class="timeline-item mt-4">
-                    <div class="glass-card timeline-content">
-                        <span class="timeline-date"><i class="far fa-calendar-alt me-2"></i> 02 May 2023 - 14 May 2025</span>
-                        <h4>Project Engineer</h4>
-                        <h5>Wipro IT Service Limited <span style="font-size: 0.9rem;">| Data Center (DC H & F)</span></h5>
-                        <ul>
-                            <li><strong>Data Center Deployment:</strong> Spearheaded the deployment of critical data center infrastructure, seamlessly installing enterprise servers, network switches, and configuring precision cabinets/racks.</li>
-                            <li><strong>Network Cabling:</strong> Directed precise LAN & SAN cable laying beneath raised floors, adhering to stringent industry standards and safety codes.</li>
-                            <li><strong>Facility Operations:</strong> Executed daily health checks and maintained robust power systems to ensure zero-interruption data center availability.</li>
-                            <li><strong>Incident Response:</strong> Conducted continuous monitoring of hardware diagnostics; rapidly mitigated alerts and alarm states to ensure 99.9% service delivery efficiency and seamless campus support.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Experience 3 -->
-                <div class="timeline-item mt-4">
-                    <div class="glass-card timeline-content">
-                        <span class="timeline-date"><i class="far fa-calendar-alt me-2"></i> 02 May 2019 - 30 April 2023</span>
-                        <h4>System Engineer</h4>
-                        <h5>VX Service Limited <span style="font-size: 0.9rem;">| Automation and Facility Management</span></h5>
-                        <ul>
-                            <li><strong>Surveillance Architecture:</strong> Managed 24/7 CCTV surveillance operations, ensuring comprehensive facility security and operational integrity.</li>
-                            <li><strong>Storage Solutions:</strong> Architected and administered NAS (Network Attached Storage) solutions for efficient, secure enterprise data management and retrieval.</li>
-                            <li><strong>Video Archiving:</strong> Configured and optimized NVR (Network Video Recorder) systems to maintain high-quality video archiving and compliance protocols.</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="py-5 mt-5">
-        <div class="container reveal">
-            <div class="text-center">
-                <h2 class="section-title">Educational Background</h2>
-            </div>
-            <div class="row mt-5 g-4">
-                
-                <!-- Edu 1 -->
-                <div class="col-lg-4">
-                    <div class="glass-card h-100">
-                        <div class="text-center mb-3">
-                            <i class="fas fa-graduation-cap fa-3x text-accent"></i>
-                        </div>
-                        <h4 class="text-center mb-2">B.Sc in EEE</h4>
-                        <p class="text-center mb-1" style="color: var(--text-secondary);"><strong>European University of Bangladesh (EUB)</strong></p>
-                        <p class="text-center mb-3" style="color: var(--text-secondary); font-size: 0.9rem;">Electrical and Electronics Engineering</p>
-                        <p style="color: var(--text-secondary); font-size: 0.95rem;">
-                            Focused on advanced circuit design, power generation systems, and electronic communication frameworks. Developed strong analytical skills in troubleshooting electrical infrastructure and systems integration methodologies.
-                        </p>
-                        <hr style="border-color: var(--glass-border);">
-                        <div class="text-center">
-                            <span class="badge" style="background-color: rgba(0, 240, 255, 0.1); color: var(--accent-color); border: 1px solid var(--accent-color);">Passing Year: 2023 | CGPA: 3.06 / 4.00</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Edu 2 -->
-                <div class="col-lg-4">
-                    <div class="glass-card h-100">
-                        <div class="text-center mb-3">
-                            <i class="fas fa-book fa-3x text-accent"></i>
-                        </div>
-                        <h4 class="text-center mb-2">Diploma in Engineering</h4>
-                        <p class="text-center mb-1" style="color: var(--text-secondary);"><strong>Muslim Aid Institute of Technology</strong></p>
-                        <p class="text-center mb-3" style="color: var(--text-secondary); font-size: 0.9rem;">Electrical Technology</p>
-                        <p style="color: var(--text-secondary); font-size: 0.95rem;">
-                            Acquired hands-on expertise in electrical machinery, industrial wiring, and control systems. Built a robust foundational understanding of practical technical implementations and safety standards.
-                        </p>
-                        <hr style="border-color: var(--glass-border);">
-                        <div class="text-center">
-                            <span class="badge" style="background-color: rgba(0, 240, 255, 0.1); color: var(--accent-color); border: 1px solid var(--accent-color);">Passing Year: 2019 | CGPA: 2.75 / 4.00</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Edu 3 -->
-                <div class="col-lg-4">
-                    <div class="glass-card h-100">
-                        <div class="text-center mb-3">
-                            <i class="fas fa-school fa-3x text-accent"></i>
-                        </div>
-                        <h4 class="text-center mb-2">SSC</h4>
-                        <p class="text-center mb-1" style="color: var(--text-secondary);"><strong>Jashore Technical Training Centre</strong></p>
-                        <p class="text-center mb-3" style="color: var(--text-secondary); font-size: 0.9rem;">Refrigeration and Air-Conditioning</p>
-                        <p style="color: var(--text-secondary); font-size: 0.95rem;">
-                            Specialized in the thermodynamics and mechanical principles of cooling systems, HVAC maintenance, and commercial environmental control systems.
-                        </p>
-                        <hr style="border-color: var(--glass-border);">
-                        <div class="text-center">
-                            <span class="badge" style="background-color: rgba(0, 240, 255, 0.1); color: var(--accent-color); border: 1px solid var(--accent-color);">Passing Year: 2014 | GPA: 4.12 / 5.00</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery / Projects Section -->
-    <section id="gallery" class="py-5 mt-5" style="background-color: var(--bg-secondary);">
-        <div class="container reveal">
-            <div class="text-center mb-4">
-                <h2 class="section-title">Certifications & Gallery</h2>
-                <p style="color: var(--text-secondary);">A visual representation of field work and achievements.</p>
-            </div>
-            <div class="row g-4">
-                <!-- Replace 'src' with actual image paths -->
-                <div class="col-md-4">
-                    <div class="glass-card p-3 h-100 text-center">
-                        <img src="https://via.placeholder.com/400x300/12121a/00f0ff?text=Add+Picture+Here" alt="Gallery Image 1" class="gallery-img mb-3">
-                        <h5>Server Rack Installation</h5>
-                        <p style="color: var(--text-secondary); font-size: 0.85rem;">Wipro IT Service Data Center</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="glass-card p-3 h-100 text-center">
-                        <img src="https://via.placeholder.com/400x300/12121a/00f0ff?text=Add+Picture+Here" alt="Gallery Image 2" class="gallery-img mb-3">
-                        <h5>SAN Cabling Project</h5>
-                        <p style="color: var(--text-secondary); font-size: 0.85rem;">Structured raised floor layout</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="glass-card p-3 h-100 text-center">
-                        <img src="https://via.placeholder.com/400x300/12121a/00f0ff?text=Add+Picture+Here" alt="Gallery Image 3" class="gallery-img mb-3">
-                        <h5>Certification / Award</h5>
-                        <p style="color: var(--text-secondary); font-size: 0.85rem;">Professional Achievement</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5 mt-5 mb-5">
-        <div class="container reveal">
-            <div class="text-center mb-5">
-                <h2 class="section-title">Get In Touch</h2>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="glass-card p-5">
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <div class="contact-item">
-                                    <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
-                                    <div class="contact-text">
-                                        <h5>Phone</h5>
-                                        <p><a href="tel:+8801306816401" style="color: inherit; text-decoration: none;">+8801306-816401</a></p>
-                                    </div>
-                                </div>
+                <div class="row g-4 justify-content-center">
+                    <!-- Skill Category 1 -->
+                    <div class="col-md-4">
+                        <div class="glass-card text-center h-100">
+                            <i class="fas fa-server fa-3x text-accent mb-3"></i>
+                            <h3 class="mb-3 fs-4">Hardware & Infrastructure</h3>
+                            <div>
+                                <span class="skill-badge">Server Maintenance</span>
+                                <span class="skill-badge">Data Center Operations</span>
+                                <span class="skill-badge">Cabinet/Rack Deployment</span>
+                                <span class="skill-badge">Power Systems Maint.</span>
+                                <span class="skill-badge">Component Diagnosis (HDD, RAM, NIC)</span>
                             </div>
-                            <div class="col-md-6 mb-4">
-                                <div class="contact-item">
-                                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                                    <div class="contact-text">
-                                        <h5>Email</h5>
-                                        <p><a href="mailto:mohabbotislam615@gmail.com" style="color: inherit; text-decoration: none;">mohabbotislam615@gmail.com</a></p>
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+                    <!-- Skill Category 2 -->
+                    <div class="col-md-4">
+                        <div class="glass-card text-center h-100">
+                            <i class="fas fa-network-wired fa-3x text-accent mb-3"></i>
+                            <h3 class="mb-3 fs-4">Networking & Connectivity</h3>
+                            <div>
+                                <span class="skill-badge">LAN & SAN Cabling</span>
+                                <span class="skill-badge">Structured Cabling Design</span>
+                                <span class="skill-badge">Switch Configuration</span>
+                                <span class="skill-badge">Raised Floor Laying</span>
                             </div>
-                            <div class="col-md-6 mb-4 mb-md-0">
-                                <div class="contact-item">
-                                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-                                    <div class="contact-text">
-                                        <h5>Mailing Address</h5>
-                                        <p>House no: 166, Jorj Goli, Elephent Road, Dhaka</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="contact-item">
-                                    <div class="contact-icon"><i class="fas fa-home"></i></div>
-                                    <div class="contact-text">
-                                        <h5>Permanent Address</h5>
-                                        <p>Vill: Chaulia, Post: Rupdia, Jashore 7400</p>
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+                    <!-- Skill Category 3 -->
+                    <div class="col-md-4">
+                        <div class="glass-card text-center h-100">
+                            <i class="fas fa-shield-alt fa-3x text-accent mb-3"></i>
+                            <h3 class="mb-3 fs-4">Security & Administration</h3>
+                            <div>
+                                <span class="skill-badge">OS Troubleshooting</span>
+                                <span class="skill-badge">NAS Storage Admin</span>
+                                <span class="skill-badge">CCTV & NVR Operation</span>
+                                <span class="skill-badge">Performance Auditing</span>
+                                <span class="skill-badge">IT Asset Management</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-5 mt-5" style="background-color: var(--bg-secondary);">
+            <div class="container reveal">
+                <div class="text-center">
+                    <h2 class="section-title">Professional Experience</h2>
+                </div>
+                <div class="timeline mt-5">
+                    
+                    <!-- Experience 1 -->
+                    <div class="timeline-item">
+                        <div class="glass-card timeline-content">
+                            <span class="timeline-date"><i class="far fa-calendar-alt me-2"></i> 15 June 2025 - Present</span>
+                            <h3>Support Engineer</h3>
+                            <h4 class="fs-5 text-secondary">Tech BD Solution <span style="font-size: 0.9rem;">| Server Maintenance Department</span></h4>
+                            <ul>
+                                <li><strong>Hardware Lifecycle Management:</strong> Orchestrated hardware lifecycle management, including diagnosing and replacing faulty enterprise server components (HDD, RAM, NIC, PSU) to minimize system downtime.</li>
+                                <li><strong>Infrastructure Deployment:</strong> Engineered structured cabling solutions and executed comprehensive hardware maintenance protocols across multiple client sites.</li>
+                                <li><strong>System Administration:</strong> Managed operating system upgrades, executed advanced hardware troubleshooting, and maintained meticulous IT asset inventories.</li>
+                                <li><strong>Client Services:</strong> Delivered exemplary technical support, resolving complex client issues swiftly and generating detailed, actionable service performance reports.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="timeline-item mt-4">
+                        <div class="glass-card timeline-content">
+                            <span class="timeline-date"><i class="far fa-calendar-alt me-2"></i> 02 May 2023 - 14 May 2025</span>
+                            <h3>Project Engineer</h3>
+                            <h4 class="fs-5 text-secondary">Wipro IT Service Limited <span style="font-size: 0.9rem;">| Data Center (DC H & F)</span></h4>
+                            <ul>
+                                <li><strong>Data Center Deployment:</strong> Spearheaded the deployment of critical data center infrastructure, seamlessly installing enterprise servers, network switches, and configuring precision cabinets/racks.</li>
+                                <li><strong>Network Cabling:</strong> Directed precise LAN & SAN cable laying beneath raised floors, adhering to stringent industry standards and safety codes.</li>
+                                <li><strong>Facility Operations:</strong> Executed daily health checks and maintained robust power systems to ensure zero-interruption data center availability.</li>
+                                <li><strong>Incident Response:</strong> Conducted continuous monitoring of hardware diagnostics; rapidly mitigated alerts and alarm states to ensure 99.9% service delivery efficiency and seamless campus support.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Experience 3 -->
+                    <div class="timeline-item mt-4">
+                        <div class="glass-card timeline-content">
+                            <span class="timeline-date"><i class="far fa-calendar-alt me-2"></i> 02 May 2019 - 30 April 2023</span>
+                            <h3>System Engineer</h3>
+                            <h4 class="fs-5 text-secondary">VX Service Limited <span style="font-size: 0.9rem;">| Automation and Facility Management</span></h4>
+                            <ul>
+                                <li><strong>Surveillance Architecture:</strong> Managed 24/7 CCTV surveillance operations, ensuring comprehensive facility security and operational integrity.</li>
+                                <li><strong>Storage Solutions:</strong> Architected and administered NAS (Network Attached Storage) solutions for efficient, secure enterprise data management and retrieval.</li>
+                                <li><strong>Video Archiving:</strong> Configured and optimized NVR (Network Video Recorder) systems to maintain high-quality video archiving and compliance protocols.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="py-5 mt-5">
+            <div class="container reveal">
+                <div class="text-center">
+                    <h2 class="section-title">Educational Background</h2>
+                </div>
+                <div class="row mt-5 g-4">
+                    
+                    <!-- Edu 1 -->
+                    <div class="col-lg-4">
+                        <div class="glass-card h-100">
+                            <div class="text-center mb-3">
+                                <i class="fas fa-graduation-cap fa-3x text-accent"></i>
+                            </div>
+                            <h3 class="text-center mb-2 fs-4">B.Sc in EEE</h3>
+                            <p class="text-center mb-1" style="color: var(--text-secondary);"><strong>European University of Bangladesh (EUB)</strong></p>
+                            <p class="text-center mb-3" style="color: var(--text-secondary); font-size: 0.9rem;">Electrical and Electronics Engineering</p>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                                Focused on advanced circuit design, power generation systems, and electronic communication frameworks. Developed strong analytical skills in troubleshooting electrical infrastructure and systems integration methodologies.
+                            </p>
+                            <hr style="border-color: var(--glass-border);">
+                            <div class="text-center">
+                                <span class="badge" style="background-color: rgba(0, 240, 255, 0.1); color: var(--accent-color); border: 1px solid var(--accent-color);">Passing Year: 2023 | CGPA: 3.06 / 4.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Edu 2 -->
+                    <div class="col-lg-4">
+                        <div class="glass-card h-100">
+                            <div class="text-center mb-3">
+                                <i class="fas fa-book fa-3x text-accent"></i>
+                            </div>
+                            <h3 class="text-center mb-2 fs-4">Diploma in Engineering</h3>
+                            <p class="text-center mb-1" style="color: var(--text-secondary);"><strong>Muslim Aid Institute of Technology</strong></p>
+                            <p class="text-center mb-3" style="color: var(--text-secondary); font-size: 0.9rem;">Electrical Technology</p>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                                Acquired hands-on expertise in electrical machinery, industrial wiring, and control systems. Built a robust foundational understanding of practical technical implementations and safety standards.
+                            </p>
+                            <hr style="border-color: var(--glass-border);">
+                            <div class="text-center">
+                                <span class="badge" style="background-color: rgba(0, 240, 255, 0.1); color: var(--accent-color); border: 1px solid var(--accent-color);">Passing Year: 2019 | CGPA: 2.75 / 4.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Edu 3 -->
+                    <div class="col-lg-4">
+                        <div class="glass-card h-100">
+                            <div class="text-center mb-3">
+                                <i class="fas fa-school fa-3x text-accent"></i>
+                            </div>
+                            <h3 class="text-center mb-2 fs-4">SSC</h3>
+                            <p class="text-center mb-1" style="color: var(--text-secondary);"><strong>Jashore Technical Training Centre</strong></p>
+                            <p class="text-center mb-3" style="color: var(--text-secondary); font-size: 0.9rem;">Refrigeration and Air-Conditioning</p>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                                Specialized in the thermodynamics and mechanical principles of cooling systems, HVAC maintenance, and commercial environmental control systems.
+                            </p>
+                            <hr style="border-color: var(--glass-border);">
+                            <div class="text-center">
+                                <span class="badge" style="background-color: rgba(0, 240, 255, 0.1); color: var(--accent-color); border: 1px solid var(--accent-color);">Passing Year: 2014 | GPA: 4.12 / 5.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery / Projects Section -->
+        <section id="gallery" class="py-5 mt-5" style="background-color: var(--bg-secondary);">
+            <div class="container reveal">
+                <div class="text-center mb-4">
+                    <h2 class="section-title">Certifications & Gallery</h2>
+                    <p style="color: var(--text-secondary);">A visual representation of field work and achievements.</p>
+                </div>
+                <div class="row g-4">
+                    <!-- Replaced remote placeholders with inline SVG to fix 404 connection closed errors -->
+                    <div class="col-md-4">
+                        <div class="glass-card p-3 h-100 text-center">
+                            <svg class="gallery-img mb-3" width="400" height="300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder">
+                                <rect width="100%" height="100%" fill="#12121a"></rect>
+                                <text x="50%" y="50%" fill="#00f0ff" dy=".3em" text-anchor="middle" font-size="20">Add Picture Here</text>
+                            </svg>
+                            <h3 class="fs-5">Server Rack Installation</h3>
+                            <p style="color: var(--text-secondary); font-size: 0.85rem;">Wipro IT Service Data Center</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="glass-card p-3 h-100 text-center">
+                            <svg class="gallery-img mb-3" width="400" height="300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder">
+                                <rect width="100%" height="100%" fill="#12121a"></rect>
+                                <text x="50%" y="50%" fill="#00f0ff" dy=".3em" text-anchor="middle" font-size="20">Add Picture Here</text>
+                            </svg>
+                            <h3 class="fs-5">SAN Cabling Project</h3>
+                            <p style="color: var(--text-secondary); font-size: 0.85rem;">Structured raised floor layout</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="glass-card p-3 h-100 text-center">
+                            <svg class="gallery-img mb-3" width="400" height="300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder">
+                                <rect width="100%" height="100%" fill="#12121a"></rect>
+                                <text x="50%" y="50%" fill="#00f0ff" dy=".3em" text-anchor="middle" font-size="20">Add Picture Here</text>
+                            </svg>
+                            <h3 class="fs-5">Certification / Award</h3>
+                            <p style="color: var(--text-secondary); font-size: 0.85rem;">Professional Achievement</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-5 mt-5 mb-5">
+            <div class="container reveal">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Get In Touch</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="glass-card p-5">
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="contact-item">
+                                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                                        <div class="contact-text">
+                                            <h3 class="fs-6 m-0 text-white">Phone</h3>
+                                            <p><a href="tel:+8801306816401" style="color: inherit; text-decoration: none;">+8801306-816401</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="contact-item">
+                                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                                        <div class="contact-text">
+                                            <h3 class="fs-6 m-0 text-white">Email</h3>
+                                            <p><a href="mailto:mohabbotislam615@gmail.com" style="color: inherit; text-decoration: none;">mohabbotislam615@gmail.com</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4 mb-md-0">
+                                    <div class="contact-item">
+                                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                        <div class="contact-text">
+                                            <h3 class="fs-6 m-0 text-white">Mailing Address</h3>
+                                            <p>House no: 166, Jorj Goli, Elephent Road, Dhaka</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="contact-item">
+                                        <div class="contact-icon"><i class="fas fa-home"></i></div>
+                                        <div class="contact-text">
+                                            <h3 class="fs-6 m-0 text-white">Permanent Address</h3>
+                                            <p>Vill: Chaulia, Post: Rupdia, Jashore 7400</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
