@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggleBtn = document.getElementById('theme-toggle');
     const themeIcon = document.getElementById('theme-icon');
 
-    // Function to set theme
     function setTheme(theme) {
         document.documentElement.setAttribute('data-theme', theme);
         localStorage.setItem('theme', theme);
@@ -16,10 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Determine initial theme:
-    // 1. Check localStorage
-    // 2. Fallback to OS preference
-    // 3. Fallback to dark
     const savedTheme = localStorage.getItem('theme');
     const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
 
@@ -28,10 +23,9 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (prefersLight) {
         setTheme('light');
     } else {
-        setTheme('dark'); // Default to dark if no preference
+        setTheme('dark'); 
     }
 
-    // Toggle button click listener
     if (themeToggleBtn) {
         themeToggleBtn.addEventListener('click', () => {
             const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
@@ -40,37 +34,64 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Listen for OS theme changes
     window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', e => {
         if (!localStorage.getItem('theme')) {
             setTheme(e.matches ? 'light' : 'dark');
         }
     });
 
-    // --- Scroll Reveal Animation ---
+    // --- Scroll Reveal Animation using IntersectionObserver ---
     const reveals = document.querySelectorAll('.reveal');
+    const revealOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px"
+    };
 
-    function reveal() {
-        const windowHeight = window.innerHeight;
-        const elementVisible = 100;
-
-        reveals.forEach((reveal) => {
-            const elementTop = reveal.getBoundingClientRect().top;
-            if (elementTop < windowHeight - elementVisible) {
-                reveal.classList.add('active');
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target); // Stop observing once revealed
             }
         });
-    }
+    }, revealOptions);
 
-    window.addEventListener('scroll', reveal);
-    reveal(); // Trigger once on load
+    reveals.forEach(reveal => {
+        revealObserver.observe(reveal);
+    });
+
+    // --- Active Nav Link Update using IntersectionObserver ---
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    const navOptions = {
+        threshold: 0.5, // Trigger when 50% of the section is visible
+        rootMargin: "-80px 0px 0px 0px" // Account for fixed navbar height
+    };
+
+    const navObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const currentId = entry.target.getAttribute('id');
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${currentId}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+    }, navOptions);
+
+    sections.forEach(section => {
+        navObserver.observe(section);
+    });
 
     // --- Smooth Scrolling for anchor links ---
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             
-            // Close mobile navbar if open
             const navbarToggler = document.querySelector('.navbar-toggler');
             const navbarCollapse = document.querySelector('.navbar-collapse');
             if (navbarCollapse && navbarCollapse.classList.contains('show')) {
@@ -90,30 +111,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     top: targetPosition,
                     behavior: 'smooth'
                 });
-            }
-        });
-    });
-
-    // --- Update active nav link on scroll ---
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('.nav-link');
-
-    window.addEventListener('scroll', () => {
-        let current = '';
-        const navbarHeight = document.querySelector('.navbar').offsetHeight;
-
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop - navbarHeight - 50;
-            const sectionHeight = section.clientHeight;
-            if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
-                current = section.getAttribute('id');
-            }
-        });
-
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === `#${current}`) {
-                link.classList.add('active');
             }
         });
     });
